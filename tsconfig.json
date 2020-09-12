@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "strict": true,
+    "types": ["jest"]
+  }
+}
