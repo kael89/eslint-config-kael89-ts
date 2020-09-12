@@ -3,6 +3,7 @@ module.exports = {
     'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:jest/recommended',
+    'plugin:jest-formatting/recommended',
     'plugin:prettier/recommended',
     'prettier/react',
   ],
@@ -47,5 +48,13 @@ module.exports = {
       { forbid: ['any'], checkContextTypes: true, checkChildContextTypes: true },
     ],
     'react/jsx-props-no-spreading': 'off',
+  },
+  settings: {
+    jest: {
+      version: '26',
+    },
+    react: {
+      version: '16',
+    },
   },
 };
