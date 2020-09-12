@@ -37,7 +37,10 @@ module.exports = {
       },
     ],
     'no-use-before-define': 'off',
-    'prettier/prettier': ['error', { printWidth: 100, singleQuote: true, trailingComma: 'all' }],
+    'prettier/prettier': [
+      'error',
+      { arrowParens: 'avoid', printWidth: 100, singleQuote: true, trailingComma: 'all' },
+    ],
     radix: 'off',
     'react/forbid-prop-types': [
       'warn',
