@@ -20,6 +20,9 @@
   "license": "MIT",
   "author": "Kostas Karvounis <kos.karvounis.zoumpos@gmail.com> (https://codinglicks.com)",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "compile": "tsc"
   },
