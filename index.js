@@ -15,6 +15,8 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-use-before-define': 'off',
     'import/prefer-default-export': 'off',
     'no-continue': 'off',
     'no-plusplus': 'off',
@@ -37,7 +39,6 @@ module.exports = {
           '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
     ],
-    'no-use-before-define': 'off',
     'prettier/prettier': [
       'error',
       { arrowParens: 'avoid', printWidth: 100, singleQuote: true, trailingComma: 'all' },
@@ -48,13 +49,14 @@ module.exports = {
       { forbid: ['any'], checkContextTypes: true, checkChildContextTypes: true },
     ],
     'react/jsx-props-no-spreading': 'off',
+    'simple-import-sort/sort': 'warn',
   },
   settings: {
     jest: {
       version: '26',
     },
     react: {
-      version: '16',
+      version: '16.2',
     },
   },
 };
