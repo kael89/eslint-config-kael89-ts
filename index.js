@@ -1,9 +1,10 @@
 module.exports = {
   extends: [
-    'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
+    'airbnb-typescript',
     'plugin:jest/recommended',
     'plugin:jest-formatting/recommended',
+    'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
     'prettier/react',
   ],
@@ -15,8 +16,6 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/indent': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-use-before-define': 'off',
     'import/prefer-default-export': 'off',
     'no-continue': 'off',
