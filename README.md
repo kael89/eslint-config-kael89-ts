@@ -18,24 +18,32 @@ This the base [ESLint](https://eslint.org/) configuration I use in personal Type
 npm install kael89/eslint-config-kael89-ts#v2.1.0 eslint prettier
 ```
 
-2. Extend from this package in your [ESLint configuration](https://eslint.org/docs/user-guide/configuring). The simplest way to do so is adding an `eslintConfig` stanza in your project's `package.json`:
+2. Extend this package in your [ESLint configuration](https://eslint.org/docs/user-guide/configuring):
 
 ```json
-  "eslintConfig": {
-    "extends": "kael89-ts"
-  }
+{
+  "extends": "kael89-ts"
+}
 ```
 
-3. If you use a TS configuration file other than the default (`tsconfig.json` under the project's root), you need to specify its path:
+⚠️ If you use a TS configuration file other than the default (`tsconfig.json` under the project's root), you need to specify its path:
 
 ```json
-  "eslintConfig": {
-    "parserOptions": {
-      "project": "ts/tsconfig.dev.json",
-    }
+{
+  "parserOptions": {
+    "project": "ts/tsconfig.dev.json"
   }
+}
 ```
+
+⚠️ If you get the following error:
+
+> Configuration for rule "@typescript-eslint/indent" is invalid
+
+it is a known [eslint-config-airbnb-typescript issue](https://github.com/iamturns/eslint-config-airbnb-typescript/issues/98#issuecomment-665317214), see that link for possible solutions.
 
 👉 For the best linting experience, we suggest including the settings specified in `tsconfig.json` in your project's TS configuration.
+
+---
 
 **Author:** Kostas Karvounis https://codinglicks.com
