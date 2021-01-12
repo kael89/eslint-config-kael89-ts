@@ -36,6 +36,13 @@ import dependency from 'dependency';
 const returnType = () => {};
 
 // @typescript-eslint/explicit-module-boundary-types
+export const foo = () => true;
+
+// class-methods-use-this
+class Class {
+  bar() {}
+}
+
 // import/prefer-default-export
 export const moduleBoundaryTypes = () => {};
 
