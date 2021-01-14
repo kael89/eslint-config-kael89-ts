@@ -16,7 +16,7 @@ let a;
 |--------------------------------------------------
 */
 
-// simple-import-sort/sort
+// simple-import-sort/imports
 /* eslint-disable import/first */
 /* eslint-disable import/extensions */
 /* eslint-disable import/order */
